@@ -25,14 +25,15 @@ alx-airbnb-database/
 │   └── requirements.md      # Documentation of entities and relationships
 ├── database-script-0x01/
 │   ├── schema.sql           # SQL script to create the database schema (DDL)
-│   └── README.md            # Schema documentation
+│   └── README.md            # Documentation for schema design and implementation
 ├── database-script-0x02/
-│   ├── seed.sql             # SQL script to insert sample data
-│   └── README.md            # Seeding process documentation
-├── normalization.md         # Normalization steps to achieve 3NF
+│   ├── seed.sql             # SQL script to insert sample data (DML)
+│   └── README.md            # Documentation for the seeding process
+├── normalization.md         # Normalization steps and explanation to achieve 3NF
 └── README.md                # Project overview (this file)
-
+```
 --
+
 ## 💻 Project Summary
 
 User Management: Supports guest, host, and admin roles.

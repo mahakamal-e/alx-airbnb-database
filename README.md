@@ -83,7 +83,6 @@ Messaging System: Enables direct user-to-user communication within the platform.
 
 ## 👤 Author
 
-Your Name  
 Maha Kamal
 
 ---

@@ -39,7 +39,8 @@ JOIN User ON Booking.user_id = User.user_id
 JOIN Property ON Booking.property_id = Property.property_id
 LEFT JOIN Payment ON Booking.booking_id = Payment.booking_id;
 
--- Optimized version of the query with filtering to reduce dataset size
+
+-- Optimized query with multiple conditions using AND
 EXPLAIN ANALYZE
 SELECT 
     Booking.booking_id,
@@ -59,4 +60,5 @@ FROM Booking
 JOIN User ON Booking.user_id = User.user_id
 JOIN Property ON Booking.property_id = Property.property_id
 LEFT JOIN Payment ON Booking.booking_id = Payment.booking_id
-WHERE Booking.status = 'confirmed';
+WHERE Booking.status = 'confirmed'
+  AND Booking.start_date >= '2025-01-01';
